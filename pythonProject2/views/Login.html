@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="he" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="logo"> <a  href="homepage.html"><span>LAS</span>ANDWICH </a></div>
+    <div class="nav-links">
+        <ul>
+            <li><a href="about.html">?מי אנחנו</a> </li>
+            <li><a href="MANUE1.html">לסנדוויצ'ים שלנו</a> </li>
+            <li><a href="schaeduale.html">המערכת שלי</a> </li>
+            <li><a href="ContactUs.html">צור קשר</a> </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!--login-->
+
+<div class="login">
+    <div class="loginbox">
+        <img src="../static/images/avatar.png" class="avatar">
+        <h1>כניסה לחשבון</h1>
+        <form class="login_form" action="MANUE1.html" method="post" name="form" onsubmit="return validated()" >
+            <p>שם משתמש/אימייל</p>
+            <input autocomplete="off" type ="text" name="user"
+                   placeholder="הכנס שם משתמש ">
+            <div id="user_error">שם משתמש שגוי </div>
+            <p>סיסמה</p>
+            <input type="password" name="password" placeholder="הכנס סיסמה">
+            <div id="pass_error">סיסמא שגויה</div>
+            <input type="submit" name="" value="כניסה">
+            <a href = 'register.html'>אין לך שם משתמש?</a>
+        </form>
+
+
+
+    </div>
+</div>
+
+<script src="../static/validlogin.js"></script>
+
+</body>
+</html>

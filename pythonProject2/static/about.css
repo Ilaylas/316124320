@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  Calibri, sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/about.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between ;
+    align-items: center;
+}
+.logo  a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.logo span{
+    color: #a93737;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.aboutUs{
+    width:90%;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    text-align: right;
+}
+.aboutUs h1{
+    font-size: 62px;
+}
+.aboutUs p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: white;
+}
+
+@media(max-width:500px) {
+    .text-box h1{
+        font-size: 40px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right:-300px;
+        text-align: left;
+        z-index: 2;
+        /*transition:3s;*/
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
