@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="he" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="../static/common.css">
+    <link rel="stylesheet" href="../static/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script defer src="../static/register.js"></script>
+</head>
+<body dir="rtl">
+<div class="header">
+
+    <div class="register">
+        <div class="title">
+            הצטרפות
+        </div>
+
+        <form id=form action="index.html" method="post" >
+            <div class ="card-detail">
+                <div class="card-box">
+                    <span class="details>"> שם מלא</span>
+                    <input autocomplete="off" id="fullname" name="fullname" type ="text"   placeholder="הכנס שם מלא">
+                    <div class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details>">שם משתמש </span>
+                    <input id="username" name="username" type ="text"   placeholder="הכנס שם משתמש ">
+                    <div class="error"></div>
+                </div>
+
+                <div class="card-box">
+                    <span class="details>">אימייל</span>
+                    <input id="email" name="email" type="text"  placeholder="הכנס אימייל">
+                    <div class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details>">מספר טלפון </span>
+                    <input id="phone" name="phone" type ="text" placeholder="הכנס מספר טלפון ">
+                    <div class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details>">אימות סיסמא  </span>
+                    <input id="password2" name="password2" type ="password"   placeholder="הכנס סיסמא ">
+                    <div class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details>">סיסמא  </span>
+                    <input id="password" name="passeord"  type="password"  placeholder="הכנס סיסמא שנית">
+                    <div class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details>">כתובת </span>
+                    <textarea id ="adress" name="adress" class="textarea"  placeholder="הכנס כתובת"></textarea>
+                    <div class="error"></div>
+                </div>
+                <div class="card-box">
+                    <span class="details>">אלרגיות </span>
+                    <textarea id ="alergy" name="alergy" class="textarea" placeholder="ספר לנו אם רגיש למוצר מסוים כמו גלוטן\לקטוז ועוד"></textarea>
+                    <div class="error"></div>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit"  value="הצטרף">
+            </div>
+
+        </form>
+    </div>
+
+
+</div>
+
+<script src="../static/common.js"></script>
+</body>
+</html>

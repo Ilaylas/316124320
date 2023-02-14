@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/common.css">
+    <link rel="stylesheet" href="../static/Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body dir="rtl">
+
+<div class="login">
+    <div class="loginbox">
+        <img src="../static/images/avatar.png" class="avatar">
+        <h1>כניסה לחשבון</h1>
+        <form class="login_form">
+
+            <p>אימייל</p>
+            <input autocomplete="off" id="email" type="email" name="email" placeholder="הכנס אימייל">
+
+            <p>סיסמה</p>
+            <input autocomplete="off" id="password" type="password" name="password" placeholder="הכנס סיסמה">
+
+            <button onclick="login(event)">כניסה</button>
+
+            <a href='register.html'>אין לך שם משתמש?</a>
+        </form>
+
+    </div>
+</div>
+
+<script src="../static/common.js"></script>
+<script src="../static/login.js"></script>
+
+</body>
+</html>
