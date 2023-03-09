@@ -1,0 +1,6 @@
+# install the following packages (with npm install):
+body-parser
+cors
+express
+mysql
+nodemon

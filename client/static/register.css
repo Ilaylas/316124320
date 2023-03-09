@@ -1,0 +1,124 @@
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/Registration1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.register{
+    max-width: 700px;
+    margin: auto;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    background:linear-gradient(135deg, #dc0606ca,#05073a);
+    color: white;
+}
+.register .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+.register .title::before{
+    content:'';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg,#71b7e6,#9b5b);
+}
+
+.register form .card-detail{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+
+}
+form .card-detail .card-box{
+    width:calc(100%/2 - 20px);
+    margin-bottom:15px;
+    text-align: right;
+}
+.card-detail .card-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: right;
+
+}
+.card-detail .card-box input,
+.card-detail .card-box textarea
+{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    text-align: right;
+}
+.register .card-box textarea{
+    resize: none;
+    height: 125px;
+}
+.card-detail .card-box input:focus,
+.card-detail .card-box input:valid{
+    border-color: #9b59b6;
+
+}
+form .button{
+    text-align: center;
+}
+form .button input{
+    padding:10px 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color: white;
+    border:none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#05073a,#dc0606ca);
+}
+form .button input:hover {
+    background: linear-gradient(-135deg, #05073a, #dc0606ca);
+}
+
+.card-box .error
+{
+    color: gold;
+}
+
+
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+    form .card-detail .card-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .register form .card-detail{
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .card-detail::-webkit-scrollbar{
+        width:0;
+    }
+}
+
